@@ -23,7 +23,7 @@ class Network(object):       # clase del objeto con argumneto su herencia, es de
                            #(self, a(activaciones de la primera capa))
         """Return the output of the network if "a" is input."""
         for b, w in zip(self.biases, self.weights):   # zip pega los vectores elemento a elemento
-            a = sigmoid(np.dot(w, a)+b)
+             a = Network.sigmoid(np.dot(w, a)+b)
         return a
     def SG(self, training_data, epochs, mini_batch_size, eta,
             test_data=None):
@@ -94,17 +94,17 @@ class Network(object):       # clase del objeto con argumneto su herencia, es de
         for b, w in zip(self.biases, self.weights):
             z = np.dot(w, activation)+b  #argumento de la sigmoide. np.dot(w, activation)=wx
             zs.append(z)
-            activation = sigmoid(z)
+            activation = Network.sigmoid(z)
             activations.append(activation)
         # backward pass
         delta = self.cost_derivative(activations[-1], y) * \
-              sigmoid_prime(zs[-1])
+              Network.sigmoid_prime(zs[-1])
         nabla_b[-1] = delta
         nabla_w[-1] = np.dot(delta, activations[-2].transpose())
         
         for l in range(2, self.num_layers): # l variable l es pequeña y l=1 es la ultima capa de la red
             z = zs[-l]  # y -1 la penultima y así sucesivamente, z respresenta la entreda de la capa actual
-            sp = sigmoid_prime(z) #es la derivada de la función de activación aplicada a z
+            sp = Network.sigmoid_prime(z) #es la derivada de la función de activación aplicada a z
             delta = np.dot(self.weights[-l+1].transpose(), delta) * sp #epresenta el error en la capa actual,
                                    # y se calcula utilizando los pesos y el error en la capa siguiente
             nabla_b[-l] = delta
@@ -129,4 +129,4 @@ class Network(object):       # clase del objeto con argumneto su herencia, es de
         return 1.0/(1.0+np.exp(-z)) #nos regresa la funcion sigmoidal de la capa  
 
     def sigmoid_prime(z):
-        return sigmoid(z)*(1-sigmoid(z)) #nos regresa la derivada de la funcion sigmoidal de la capa  
+        return Network.sigmoid(z)*(1-Network.sigmoid(z)) #nos regresa la derivada de la funcion sigmoidal de la capa  
