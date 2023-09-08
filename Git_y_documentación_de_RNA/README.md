@@ -10,10 +10,12 @@
 8.  Empujar (push) su codigo a github.
 
 Comandos basicos de [git](https://www.freecodecamp.org/espanol/news/10-comandos-de-git-que-todo-desarrollador-deberia-saber/)
+---
 ## El entrenamiento de la red se puede visualizar en la siguiente imagen:
 
 <p align="center">
   <img src="Evidencia_de_Entrenamiento.png" width="300" height="400" />
 </p>
+Se puede apreciar se comienza con una eficiencia de 82.2% y termina con una eficiencia de 94.8%.
 
 ## El codigo documentado se puede ver en siguiente [link](https://github.com/Jeremy-22/RN/blob/main/Git_y_documentaci%C3%B3n_de_RNA/RNAPY.py)
