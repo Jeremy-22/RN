@@ -11,7 +11,7 @@ net=RNAPY.Network([784,30,10]) # CAMBIÉ EL NOMBRE DEL ARCHIVO NETWORK
 
 net.SG(training_data, 30, 10, 3.0, test_data=test_data)
 
-archivo = open("red_prueba1.pkl",'wb')
+archivo = open("red_prueba.pkl",'wb')
 pickle.dump(net,archivo)
 archivo.close()
 exit()
