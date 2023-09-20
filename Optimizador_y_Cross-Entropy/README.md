@@ -9,9 +9,9 @@
 
 ---
 
-En el siguiente [link](https://github.com/Jeremy-22/RN/blob/main/Git_y_documentaci%C3%B3n_de_RNA/PRN1.py)
+En el siguiente [link](https://github.com/Jeremy-22/RN/blob/main/Optimizador_y_Cross-Entropy/PRN1.py)
 se puede visualizar el codigo con la implementación del otimizador BackProp con inercia
 <p align="center">
-  <img src="Evidencia.png" width="300" height="500" />
+  <img src="evidencia2.png" width="300" height="500" />
 </p>
-Se puede apreciar se comienza con una eficiencia de 90.16% y termina con una eficiencia de 94.25%, esto con respecto a la red sin implementar el optimizador se puede apreciar que comienza con mejor eficiencia pero termina con una menor.
+Se puede apreciar se comienza con una eficiencia de 91.46% y termina con una eficiencia de 94.91%, esto con respecto a la red sin implementar el optimizador se puede apreciar que comienza con mejor eficiencia pero termina con una menor.

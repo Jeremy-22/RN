@@ -14,6 +14,7 @@ class Network(object):
         for b, w in zip(self.biases, self.weights):
              a = Network.sigmoid(np.dot(w, a)+b)
         return a
+    ## Implementación de Backprop con inercia
     def SGD_momentum(self, training_data, epochs, mini_batch_size, eta, momentum,
             test_data=None):
         training_data = list(training_data)
@@ -48,7 +49,7 @@ class Network(object):
                       for vw, nw in zip(v_w, nabla_w)]
         self.biases = [b + (eta / len(mini_batch))*vb for b, vb in zip(self.biases, v_b)]
         self.weights = [w + (eta / len(mini_batch))*vw for w, vw in zip(self.weights, v_w)]
-
+##
     def backprop(self, x, y):
         nabla_b = [np.zeros(b.shape) for b in self.biases]
         nabla_w = [np.zeros(w.shape) for w in self.weights]
