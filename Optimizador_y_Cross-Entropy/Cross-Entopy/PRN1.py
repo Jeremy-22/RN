@@ -1,15 +1,21 @@
 import random
 import numpy as np
+
+class CrossEntropy(object):
+    def f(a,y):
+        r = np.sum(y*np.log(a)+(1-y)*np.log(1-a))
+        return r
 class Network(object):       
-    def __init__(self, sizes):
+    def __init__(self, sizes, cost=CrossEntropy):
         self.num_layers = len(sizes)
         self.sizes = sizes
+        self.cost = cost
+
         self.biases = [np.random.randn(y, 1) for y in sizes[1:]]
         self.weights = [np.random.randn(y, x) 
                         for x, y in zip(sizes[:-1], sizes[1:])]
         self.epsilon =0.00001
-        self.g2 = 0.2
-        self.beta = 0.9
+
     def feedforward(self, a):
         for b, w in zip(self.biases, self.weights):
              a = Network.sigmoid(np.dot(w, a)+b)
