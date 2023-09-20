@@ -4,3 +4,4 @@
 2.  Empujar (push) su c ́odigo a github.
 
 ---
+En este [link](https://github.com/Jeremy-22/RN/blob/main/Optimizador_y_Cross-Entropy/Cross-Entopy/RNACESM.py) se puede visualizar el codigo con Cross-Entropy
