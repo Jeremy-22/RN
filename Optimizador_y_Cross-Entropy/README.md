@@ -14,8 +14,4 @@ se puede visualizar el codigo con la implementación del otimizador BackProp con
 <p align="center">
   <img src="evidencia2.png" width="300" height="500" />
 </p>
-<<<<<<< HEAD
 Se puede apreciar se comienza con una eficiencia de 91.46% y termina con una eficiencia de 94.91%, esto con respecto a la red sin implementar el optimizador se puede apreciar que comienza con mejor eficiencia pero termina con una menor.
-=======
-Se puede apreciar se comienza con una eficiencia de 90.16% y termina con una eficiencia de 94.25%, esto con respecto a la red sin implementar el optimizador se puede apreciar que comienza con mejor eficiencia pero termina con una menor.
->>>>>>> 156eb25614fb8c746120fba42b4d40af18c5b6e3
