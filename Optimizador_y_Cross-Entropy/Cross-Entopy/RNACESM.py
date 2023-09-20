@@ -1,12 +1,12 @@
 import random
 import numpy as np
 
-class CrossEntropy(object):
-    def f(a,y):
-        r = np.sum(y*np.log(a)+(1-y)*np.log(1-a))
+class CrossEntropy(object): #definimos a cross-entropy
+    def f(a,y): #funcion de costo
+        r = np.sum(y*np.log(a)+(1-y)*np.log(1-a))#donde r es binary cross entropy
         return r
 class Network(object):       
-    def __init__(self, sizes, cost=CrossEntropy):
+    def __init__(self, sizes, cost=CrossEntropy):#añadimos a network el crossentropy
         self.num_layers = len(sizes)
         self.sizes = sizes
         self.cost = cost
