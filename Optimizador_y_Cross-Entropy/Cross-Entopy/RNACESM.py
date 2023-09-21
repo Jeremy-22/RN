@@ -1,15 +1,17 @@
 import random
 import numpy as np
 
-class CrossEntropy(object): #definimos a cross-entropy
-    def f(a,y): #funcion de costo
-        r = np.sum(y*np.log(a)+(1-y)*np.log(1-a))#donde r es binary cross entropy
+class CrossEntropy(object): #definimos a cross-entropy.
+    def f(a,y): #funcion de costo.
+        training_data = list(training_data)
+        n = len(training_data)
+        r = 1/n * np.sum(y*np.log(a)+(1-y)*np.log(1-a))#donde r es binary cross entropy.
         return r
 class Network(object):       
-    def __init__(self, sizes, cost=CrossEntropy):#añadimos a network el crossentropy
+    def __init__(self, sizes, cost=CrossEntropy):#añadimos a network el crossentropy.
         self.num_layers = len(sizes)
         self.sizes = sizes
-        self.cost = cost
+        self.cost = cost #asigna el valor de la variable cost al atributo cost.
 
         self.biases = [np.random.randn(y, 1) for y in sizes[1:]]
         self.weights = [np.random.randn(y, x) 
