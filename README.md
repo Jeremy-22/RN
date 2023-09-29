@@ -1,9 +1,9 @@
 ## Neural Networks and Deep Learning
-1. Primera [Actividad](https://github.com/Jeremy-22/RN/blob/main/Git_y_documentaci%C3%B3n_de_RNA/README.md) 
+1. Primera [Actividad](https://github.com/Jeremy-22/RN/blob/main/Git_y_documentaci%C3%B3n_de_RNA/README.md).
 
-2. [Optimizador y Cross-Entropy](https://github.com/Jeremy-22/RN/blob/main/Optimizador_y_Cross-Entropy/README.md)
+2. [Optimizador y Cross-Entropy](https://github.com/Jeremy-22/RN/blob/main/Optimizador_y_Cross-Entropy/README.md).
 
-3. [Red Densa Secuencial Keras](https://github.dev/Jeremy-22/RN/blob/main/Red_densa_con_keras/REAME.md)
+3. [Red Densa Secuencial Keras](https://github.dev/Jeremy-22/RN/blob/main/Red_densa_con_keras/REAME.md).
 
 
 <p align="center">
