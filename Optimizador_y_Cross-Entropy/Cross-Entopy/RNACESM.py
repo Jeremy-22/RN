@@ -73,7 +73,7 @@ class Network(object):
     def backprop(self, x, y):
         nabla_b = [np.zeros(b.shape) for b in self.biases]
         nabla_w = [np.zeros(w.shape) for w in self.weights]
-        activation = self.cels
+        activation = x
         activations = [x] 
         zs = []
         for b, w in zip(self.biases, self.weights):
