@@ -3,6 +3,8 @@
 
 2. [Optimizador y Cross-Entropy](https://github.com/Jeremy-22/RN/blob/main/Optimizador_y_Cross-Entropy/README.md)
 
+3. [Red Densa Secuencial Keras](https://github.dev/Jeremy-22/RN/blob/main/Red_densa_con_keras/REAME.md)
+
 
 <p align="center">
   <img src="r.gif" width="400" height="250" />
